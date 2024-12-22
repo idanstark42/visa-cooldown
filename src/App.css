@@ -1,0 +1,48 @@
+html, body, #root {
+  height: 100%;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  font-size: 1.25rem;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root > *:only-child {
+  flex: 1;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+path {
+  fill: #2a354d;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.info {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  max-width: calc(100% - 2rem);
+  width: 12rem;
+  height: 6rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #333;
+}
